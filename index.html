@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDEX</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <style>
+      .banner-image {
+        background-image: url('img/image-gallery.jpeg');
+        background-size: cover;
+      }
+      .about_section{
+    padding-top:60px;
+    padding-bottom:60px;
+    width:100%;
+    height:90vh;
+}
+.section__container{
+    margin-right:60px;
+    margin-left:60px;
+}
+
+.container__row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.about__left{
+ 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: left 15px;
+    padding-right:15px; 
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+    position:relative;
+}
+.about__left img{
+    max-width:100%;
+    left:50px;
+    border-radius:15px;
+/*     transform:translate(-100%); */
+    top:0;
+    position:absolute;
+    animation:slideRight .5s 1 ease-in-out;
+    z-index:2;
+    
+}
+
+
+@keyframes slideRight{
+    0%{
+        left:-100px;
+        opacity:.5;
+    }
+    
+    100%{
+        left:50px;
+        opacity:1;
+    }
+}
+.about__right{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+        flex: 0 0 auto;
+    width: 50%;
+    padding-right:calc(var(--bs-gutter-x) / 2);
+    padding-left:calc(var(--bs-gutter-x) / 2);
+    margin-top:var(--bs-gutter-y);
+}
+.section__header{
+    width:100%;
+}
+.section__header h1{
+    padding-bottom:10px;
+    margin-bottom:10px;
+    position:relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #39394e;
+}
+.section__header h1::after{
+    content:"";
+    width:60px;
+    height:2px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    padding-bottom:10px;
+    border-bottom:2px solid #1236ab;
+}
+
+.section__body{
+    margin-top:25px;
+    width:100%;
+}
+.section__body p{
+    font-family: 'Nato Sans' ,sans-serif ;
+    width:100%;
+    display:flex;
+        
+}
+.more_btn{
+    padding-left:15px;
+    padding-right:15px;
+    background-color:gold;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-top:15px;
+    display:inline-block;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    position:relative;
+    font-size:12px;
+    border-radius: 50px;
+}
+/* .more_btn::before{
+    content:"";
+    width:0%;
+    height:100%;
+    background-color:#2626261a;
+    position:absolute;
+    left:0;
+    top:0;
+    transition:all .5s ease-in-out;
+    border-radius: 50%;
+}
+
+.more_btn:hover:before{
+    width:100%;
+} */
+
+@media screen and (max-width:1070px){
+/*     .container__row{
+        display:block;
+    } */
+    .about__left img{
+        position:relative;
+        animation:none;
+        left:0;
+        width:100%;
+        height:120px;
+        border-radius:0;
+            object-fit:cover;
+    }
+    .about__left{
+        display:block;
+        width:100%;
+         padding:0;
+         
+
+        
+    }
+    .section__container{
+        margin:0;
+    }
+    .about_section{
+        padding-top:0;
+    }
+    .about__right{
+        width:90%;
+    }
+}
+
+
+
+
+
+
+.contact .info {
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #eb5d1e;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fdf1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #7a6960;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ab9d95;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #eb5d1e;
+  color: #fff;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: blue;
+  color: #fff;
+}
+
+.section-title h2,p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #eb5d1e;
+  border-bottom: 3px solid #eb5d1e;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: blue;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: blueviolet
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cafe Zone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Cafe Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Login
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Sign-up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Find Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="content text-center">
+        <h1 class="text-white"></h1>
+      </div>
+    </div>
+    
+    
+  <!--about us-->
+  <section id="about" class="about_section">
+    <div class="section__container">
+        <div class="container__row">
+            <div class="about__left">
+                <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="thumbnail">
+            </div>
+            <div class="about__right">
+                <div class="section__header">
+                    <h1>About us</h1>
+                </div>
+                <div class="section__body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa molestiae porro asperiores enim alias. Molestias, aperiam? Obcaecati, omnis aliquam. Aperiam, corporis dolore quibusdam maxime facere illum! Nesciunt aspernatur neque libero?</p>
+                    <a href="#" class="more_btn">Know More...</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!--about us end-->
+
+
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Contact us the get started</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="info">
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Location:</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, hic. Suscipit porro repudiandae est tempora, dolores aperiam alias autem adipisci. Sed voluptatem quas hic, eum omnis optio ipsum aliquam odit?</p>
+            </div>
+
+            <div class="email">
+              <i class="fas fa-envelope-open"></i>
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="fas fa-phone-square-alt"></i>
+              <h4>Call:</h4>
+              <p>12345678909</p>
+            </div>
+
+            <iframe src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Us Section -->
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#">Our services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Order Status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">Coffee mugs & cups</a></li>
+              <li><a href="#">Coffee Makers</a></li>
+              <li><a href="#">Coffee Powders</a></li>
+              <li><a href="#">Gifts</a></li> -->
+             </ul>
+          </div> 
+          
+          <div class="footer-col">
+            <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-dark', 'shadow');
+        } else {
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>  
+  </body>
+</html>
