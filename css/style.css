@@ -8,7 +8,6 @@ body{
 	padding:0;
 	box-sizing: border-box;
 }
-
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -20,9 +19,6 @@ body{
 ul{
 	list-style: none;
 }
-/*--about us--*/
-
-/**about us **/
 .footer{
 	background-color: #24262b;
     padding: 70px 0;
@@ -52,8 +48,6 @@ ul{
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
-
-
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
@@ -63,18 +57,11 @@ ul{
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
-	margin-left: 50px;
-	
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
 	padding-left: 8px;
 }
-
-	
-	  
-	
-  
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -104,25 +91,6 @@ ul{
     width: 100%;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
